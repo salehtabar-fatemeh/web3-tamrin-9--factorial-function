@@ -15,10 +15,22 @@
         return numberFactorial;
       }
 
+      function reversFactorial(number) {
+        let numberFactorial = 1;
+        for (let i = number; i >= 1; i--) {
+          numberFactorial = numberFactorial * i;
+        }
+        return numberFactorial;
+      }
+
       document.write(factorial(3) + "<br>");
+      document.write(reversFactorial(3) + "<br>");
       document.write(factorial(5) + "<br>");
+      document.write(reversFactorial(5) + "<br>");
       document.write(factorial(6) + "<br>");
+      document.write(reversFactorial(6) + "<br>");
       document.write(factorial(7) + "<br>");
+      document.write(reversFactorial(7) + "<br>");
     </script>
   </body>
 </html>
